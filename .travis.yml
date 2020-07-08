@@ -1,0 +1,10 @@
+language: node_js
+node_js: 'stable' # or another
+cache: npm
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $eca8df185f726e0daa304a2510482eece0a561b7  # Set in the settings page of your repository, as a secure variable
+  local_dir: build
+  on:
+    branch: master
